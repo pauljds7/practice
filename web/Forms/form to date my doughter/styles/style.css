@@ -1,0 +1,74 @@
+/* ==============
+    Global styles
+============== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+    --main-bg-color: yellow;
+    --second-bg-color: white;
+    --accent-color: red;
+    --neutral-color: lightgray; 
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    font-size: 120%;
+    font-family: 'Anaheim';
+    background-color: var(--main-bg-color);
+}
+/* ============
+    Main styles
+============ */
+.main-section {
+    width: 70%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--second-bg-color);
+
+    border: 1px solid var(--neutral-color);
+    border-radius: 20px;
+    font-weight: normal;
+}
+.main-header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.main-header p {
+    margin-left: -1rem;
+}
+.main-form fieldset {
+    border: 1px solid var(--neutral-color);
+    margin-bottom: 0.5rem;
+}
+
+.essay-section {
+    padding: 1rem 0.8rem 2rem 0.8rem;
+}
+.essay-section label {
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.accent-btn {
+    background-color: var(--accent-color);
+    color: var(--second-bg-color);
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+/* Layout */
+.center {
+    display: flex;
+    justify-content: center;
+}
+.high-lines {
+    line-height: 2.5;
+}
