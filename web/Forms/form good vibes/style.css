@@ -1,0 +1,95 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 100%;
+
+    background-color: #bedfe6;
+}
+
+header, footer{
+    text-align: center;
+}
+
+main {
+    width: 700px;
+    margin: auto;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+#main-msg {
+    font-size: large;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: 0.9fr 1fr;
+}
+
+form label, form p{
+    padding: 0;
+}
+
+form input, form textarea{
+    max-width: 15rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+form input {
+    height: 1.5rem;
+}
+
+form select{
+    max-width: 6rem;
+    border-radius: 3px;
+    height: 1.5rem;
+}
+
+#radio {
+    display: flex;
+    flex-direction: column;
+}
+#radio label {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.right-middle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-top {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#submit {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit input[type=submit] {
+    background-color: #518c99;
+    color: white;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 5rem;
+}
+

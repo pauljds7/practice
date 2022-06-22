@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-text-color: white;
+    --secondary-text-color: gray;
+    --secondary-bg-color: #161616;
+}
+
+/* ===============
+    default styles
+=============== */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    font-size: 100%;
+    font-family: sans-serif;
+    background-color: black;
+    color: var(--main-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    padding: 0.5em 1em 0.5em 1em;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+}
+
+a:hover {
+    color: var(--main-text-color);
+    border: 1px solid var(--main-text-color)
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.7rem;
+}   
+
+/* ===========
+Tribute header
+=========== */
+.tribute-title {
+    margin: 3rem 0 4rem 3rem;
+
+    text-align: center;
+}
+.tribute-title h1 {
+    margin-bottom: 0;
+
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+.tribute-title p {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+.tribute-nav {
+    margin-right: 11rem;
+}
+
+/* ======
+ Synopsis 
+====== */
+.synopsis {
+    margin: 1rem 15rem 3rem 15rem;
+}
+
+.synopsis h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.synopsis p{
+    margin: 1rem 0 3rem 0;
+    padding: 0 1em 0 1em;
+    border-left: 4px solid var(--main-text-color);
+    line-height: 2rem;
+}
+
+.synopsis p a {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===
+ Quote
+=== */
+
+.quote {
+    padding: 8rem 4rem 6rem 4rem;
+
+    background-color: var(--secondary-bg-color);
+
+    letter-spacing: 4px;
+}
+
+.quote h2::before {
+    content: "\201C";
+    float: left;
+    position: relative;
+    color: var(--secondary-text-color);
+    font-size: 250px;
+    margin-bottom: 50px;
+}
+.quote h2 {
+    text-align: left;
+
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+
+}
+
+.quote span {
+    display: block;
+    text-align: right;
+}
+
+/* =========
+    Timeline
+========= */
+
+.timeline {
+    padding-top: 6rem;
+    padding-left: 2rem;
+}
+
+.timeline h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.timeline ul {
+    list-style-type: square;
+    line-height: 1.5rem;
+}
+
+.timeline ul li {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Sources */
+.sources {
+    padding-left: 3em;
+    border-bottom: 10px solid var(--secondary-bg-color);
+}
+.sources h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.sources p {
+    font-size: 0.65rem;
+    line-height: 1.5rem;
+}
+
+/* Read more */
+.read-more {
+    padding: 1.5rem 0 1.5rem 0;
+    margin: 0 1rem 0 1rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 10px solid var(--secondary-bg-color);
+}
+
+.read-more h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+/* ============
+General styling
+============ */
+.second-col {
+    color: var(--secondary-text-color)
+}
+.right-button {
+    margin-left: 0;
+    position: relative;
+    left:-5px;
+
+    border-radius: 0 4px 4px 0;
+}
+.left-button {
+    margin-right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+/* ===========
+General layout
+=========== */
+.space-apart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tribute-image {
+    width: 100%;
+    height: auto;
+}

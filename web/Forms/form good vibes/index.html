@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulius Juodsnukis">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Good vibes form</h1>
+    </header>
+
+    <main>
+        <header>
+            <p id="main-msg">Tell us something positive that happened to you today.</p>
+        </header>
+        <form action="">
+            <label for="fname" class="right-middle">Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name">
+            <label for="email" class="right-middle">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+            <label for="score" class="right-middle">On a scale of 1-10, how good was it?</label>
+            <input type="number" id="score" name="score" min="1" max="10" step="1" placeholder="Enter number between 1 and 10">
+
+            <label for="location" class="right-top">Where did it happen?</label>
+            <select name="location" id="location">
+                <option value="home">At home</option>
+                <option value="commute">On commute</option>
+                <option value="work">At work</option>
+                <option value="street">On the street</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <p class="right-top">At what time of day did it happen?</p>
+            <div id="radio">
+                <div class="radio-button">
+                    <input type="radio" name="morning" id="morning">
+                    <label for="morning">Morning</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" name="afternoon" id="afternoon">
+                    <label for="afternoon">Afternoon</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" name="evening" id="evening">
+                    <label for="evening">Evening</label>
+                </div>
+            </div>
+
+            <p class="right-top">What emotions did you experience?<br>
+                (Select all that apply)</p>
+            <div id="checkbox">
+                <input type="checkbox" id="emotion1" name="emotion1" value="excited">
+                <label for="emotion1">Excited</label><br> 
+                <input type="checkbox" id="emotion2" name="emotion2" value="humbled">
+                <label for="emotion2">Humbled</label><br>
+                <input type="checkbox" id="emotion3" name="emotion3" value="elated">
+                <label for="emotion3">Elated</label><br>
+                <input type="checkbox" id="emotion4" name="emotion4" value="loved">
+                <label for="emotion4">Loved</label><br>
+                <input type="checkbox" id="emotion5" name="emotion5" value="enthusiastic">
+                <label for="emotion5">Enthusiastic</label><br>
+            </div>
+            
+            <label for="description" class="right-top">Please describe your positive experience.</label>
+            <textarea name="description" id="description" cols="30" rows="3" placeholder="Enter your experience here"></textarea>
+
+            <div id="submit">
+                <input type="submit">
+            </div>
+
+        </form>
+    </main>
+
+
+    <footer>
+        All rights reserved 2022
+    </footer>
+</body>
+</html>

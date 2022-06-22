@@ -1,0 +1,117 @@
+/*=======
+ Setup
+========*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #e9ebe4;
+    --dark-color: #664d29;
+    --accent-color: orange;
+}
+
+body {
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    background-color: #e9ebe4;
+    font-family: sans-serif;
+}
+
+/* Main layout */
+main {
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh repeat(3, 17vh);
+
+}
+
+/* Makes fullscreen background image */
+.main-welcome::before {
+    content: "";
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(255,255,255,0), 60%, #3dcaf8), url("pics/beach.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* ==========
+ Layout stuff 
+ ==========*/
+/* Positioning the fullscreen greetings msg */
+.main-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-welcome header {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-welcome header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+.columns {
+    display: flex;
+}
+
+.columns > * {
+    flex: 1;
+}
+
+/* ============= 
+Typography stuff
+============= */
+.dark-bg {
+    background-color: #664d29;
+    color: #e9ebe4;
+}
+
+.light-bg {
+    color: #664d29;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* === 
+Button
+=== */
+
+.read-more {
+    border: 1px solid #664d29;
+    color: #664d29;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.read-more:hover {
+    color: #e9ebe4;
+    background-color: #664d29;
+}

@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary-text-color: #F1EDF2;
+    --primary-bg-color: #43464B;
+    --accent-color: #0472d1;
+}
+
+/* ===========
+Default styles
+=========== */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    font-size: 100%;
+    font-family: sans-serif;
+    color: black;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer {
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: black;
+}
+/* ============
+    Main styles
+============ */
+.welcome {
+    width: 100%;
+    height: 60vh;
+    
+    background-image:  linear-gradient(to right, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("pics/fahrul-razi-BR6lrzCPYPk-unsplash.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome p{
+    margin: 0 0 2rem 0;
+    text-align: center;
+    width: 50%;
+}
+
+.twins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.twins p {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.twins p span {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.triplets {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.triplets article {
+    flex: 1;
+}
+.feature {
+    max-width: 250px;
+    max-height: 600px;
+}
+.feature img {
+    width: 250px;
+    height: 180px;
+}
+.feature > div {
+    padding: 2rem;
+    text-align: center;
+}
+
+.one-piece {
+    min-height: 30vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+.one-piece p {
+    text-align: center;
+}
+/* ===========
+General layout
+=========== */
+.two-column {
+    grid-column: span 2;
+}
+
+/* ============
+General styling
+============ */
+.white-col-text {
+    color: white;
+}
+
+.secondary-col-text {
+    color: var(--secondary-text-color);
+}
+
+.primary-col-bg {
+    background-color: var(--primary-bg-color);
+}
+
+.secondary-col-bg {
+    background-color: var(--secondary-text-color);
+}
+
+.accent-col {
+    color: var(--accent-color);
+}
+
+.accent-bg {
+    background-color: var(--accent-color);
+}
+
+.fancy-link {
+    padding: 1em 2em 1em 2em;
+    border: 1px solid gray;
+    text-decoration: none;
+
+    background-color: var(--primary-bg-color);
+}
+.fancy-link:hover {
+    background-color: var(--secondary-text-color);
+    color: var(--primary-bg-color);
+}

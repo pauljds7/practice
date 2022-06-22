@@ -1,0 +1,249 @@
+/* ==============
+    Global styles 
+============== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #b90415;
+    --accent-color-hover: #d3071b;
+    --dark-col: #252529;
+    --light-col: #f4f4f4;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    font-size: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    padding: 1em;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* ============
+    Main styles
+============ */
+.cover {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("pics/close-up-guitarist-hand-playing-guitar-macro-concept-advertising-hobby-music-festival-entertainment-person-improvising-inspired-copyspace-insert-image-text-colorful-neon-lighted.jpg");
+}
+.cover h1{
+    font-size: 4rem;
+    margin: 0;
+    margin-top: -5rem;  
+}
+.cover h2 {
+    margin: 0;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.cover p{
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.entertainment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    height: 70vh;
+
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("pics/brandon-siu-nI7knd5sQfo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.entertainment h3{
+    font-size: 2rem;
+}
+.entertainment p{
+    margin: 0;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.music h2 {
+    font-size: 2rem;
+}
+.music h3 {
+    font-size: 2rem;
+}
+.music p{
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.music img {
+    margin-bottom: 2rem;
+    width: 70%;
+    height: auto;
+}
+
+.movie-tv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.movie-tv h3 {
+    font-size: 2rem;
+}
+.movie-tv p {
+    width: 80%;
+    font-size: 1.2rem;
+}
+.movie-tv img {
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+.gift-cards {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gift-cards img {
+    width: 40%;
+    height: auto;
+}
+.gift-cards-right {
+    width: 40%;
+}
+.gift-cards-right p{
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--dark-col);
+}
+
+
+.start-trial-btn {
+    margin: 1rem;
+    color: white;
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+}
+.start-trial-btn:hover {
+    background-color: var(--accent-color-hover);
+}
+.read-more-btn {
+    margin: 1rem;
+    color: var(--light-col);
+    background-color: darkblue;
+    border: 1px solid black;
+}
+.read-more-btn:hover {
+    background-color: blue;
+}
+
+/* ==============
+    Footer styles
+============== */
+
+.footer {
+    width: 100%;
+    height: 45vh;
+}
+.footer-nav {
+    height: 80%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-list {
+    margin-left: 4rem;
+
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+.outer-list li {
+    text-align: left;
+    margin-right: 4rem;
+}
+.outer-list span {
+    padding-right: 6rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid gray;
+}
+.inner-list {
+    margin-top: 1.8rem;
+    margin-left: -1rem;
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
+}
+.inner-list li {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+.inner-list a {
+    color: lightgray;
+}
+
+.copyright {
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.9rem;
+}
+
+/* ===============
+    General styles
+=============== */
+
+.white-txt {
+    color: white;
+}
+.light-txt {
+    color: var(--light-col);
+}
+.dark-txt {
+    color: var(--dark-col);
+}
+.light-bg {
+    background-color: var(--light-col);
+}
+.dark-bg {
+    background-color: var(--dark-col);
+}
